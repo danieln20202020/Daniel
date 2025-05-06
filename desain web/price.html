@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography & Design Services</title>
+    <title>DanielEditor</title>
     <style>
         /* ===== BASE STYLES ===== */
         :root {
             --primary-color: #4a6fa5;
             --secondary-color: #ff6b6b;
-            --accent-color: #6a5acd;
             --dark-color: #333;
             --light-color: #f8f9fa;
             --gray-color: #666;
@@ -22,30 +21,32 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-color);
-            color: var(--dark-color);
-            line-height: 1.6;
-        }
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      background: url('https://cdn.pixabay.com/photo/2016/04/20/07/30/camera-1340552_1280.jpg') no-repeat center center/cover;
+      height: 100vh;
+    }
         
         /* ===== HEADER ===== */
         header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
         
         .logo {
             font-size: 1.8rem;
@@ -82,7 +83,7 @@
                         url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            color: white;
+            
         }
         
         .hero-content {
@@ -176,6 +177,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
+            
         }
         
         .standard .pricing-price {
@@ -248,30 +250,7 @@
             border-radius: 0 0 5px 5px;
         }
         
-        /* ===== FOOTER ===== */
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: var(--secondary-color);
-        }
+       
         
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 768px) {
@@ -330,7 +309,7 @@
                     <div class="pricing-price">$299</div>
                     <div class="pricing-period">per project</div>
                 </div>
-                <div class="pricing-features">
+                <div class="pricing-features" style="color: black;">
                     <ul>
                         <li>5 high-resolution edited photos</li>
                         <li>Basic retouching</li>
@@ -350,10 +329,10 @@
                 <div class="pricing-header">
                     <div class="recommended-badge">Most Popular</div>
                     <h3 class="pricing-title">Advanced</h3>
-                    <div class="pricing-price">$599</div>
+                    <div class="pricing-price" style="color:rgb(0, 0, 0);">$599</div>
                     <div class="pricing-period">per project</div>
                 </div>
-                <div class="pricing-features">
+                <div class="pricing-features" style="color: black;">
                     <ul>
                         <li>15 high-resolution edited photos</li>
                         <li>Advanced retouching</li>
@@ -377,7 +356,7 @@
                     <div class="pricing-price">$999</div>
                     <div class="pricing-period">per project</div>
                 </div>
-                <div class="pricing-features">
+                <div class="pricing-features" style="color: black;">
                     <ul>
                         <li>30+ high-resolution edited photos</li>
                         <li>Premium retouching</li>
