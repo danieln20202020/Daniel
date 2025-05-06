@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
@@ -90,7 +92,7 @@
       width: 30px;
     }
     .about-section {
-      /* background-color: rgba(0,0,0,0.85); */
+      background-color: rgba(0,0,0,0.85);
       padding: 60px 20px;
       margin-top: 80px;
     }
@@ -107,27 +109,38 @@
     }
     .social-icons {
       margin-top: 20px;
-      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-    .social-icons a {
-      margin: 0 10px;
-      color: #040101;
-      text-decoration: none;
-      transition: color 0.3s;
+    .icon-box {
+      border: 2px solid #b4ff00;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      background-color: rgba(255,255,255,0.1);
     }
-    .social-icons a:hover {
-      color: #b4ff00;
+    .icon-box i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .icon-box p {
+      font-size: 0.9rem;
+      margin: 0;
     }
   </style>
 </head>
 <body>
   <header>DanielEditor</header>
   <nav>
-    <a href="#">Main</a>
-    <a href="#about">About</a>
-    <a href="#">Program</a>
-    <a href="#">Price</a>
-    <a href="#">Contact</a>
+    <a href="Main.html">Main</a>
+    <a href="about.html">About</a>
+    <a href="program.html">Program</a>
+    <a href="price.html">Price</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
 
@@ -137,9 +150,17 @@
       <p>Hello! I'm Daniel, a professional photo and graphic editor with a passion for visual storytelling. With over 5 years of experience using Lightroom and Photoshop, I help individuals and businesses create stunning visual content. I believe that great editing can bring any image to life and tell a powerful story.</p>
       <p>I created this program to share my knowledge and help others develop high-income skills in digital content creation.</p>
       <div class="social-icons">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-tiktok"></i>
-        <i class="fas fa-camera"></i>
+        <div class="icon-box">
+          <i class="fab fa-instagram"></i>
+          <p>Instagram: Portfolio shots and behind-the-scenes</p>
+        </div>
+        <div class="icon-box">
+          <i class="fab fa-tiktok"></i>
+          <p>TikTok: Quick editing tips and tutorials</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-camera"></i>
+        </div>
       </div>
     </div>
   </section>
